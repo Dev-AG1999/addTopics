@@ -22,6 +22,8 @@ export default function AddTopic() {
         method: "POST",
         headers: {
           "Content-type": "application/json",
+          "Access-Control-Allow-Origin": "https://developer.mozilla.org",
+          "Vary": "Origin"
         },
         body: JSON.stringify({ title, description }),
       });
