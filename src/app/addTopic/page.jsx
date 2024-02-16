@@ -22,6 +22,7 @@ export default function AddTopic() {
         method: "POST",
         headers: {
           "Content-type": "application/json",
+         "Access-Control-Allow-Origin":"https://add-topics-git-master-aishwariya-ghosal.vercel.app/"
         },
         body: JSON.stringify({ title, description }),
       });
