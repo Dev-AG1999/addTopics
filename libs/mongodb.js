@@ -1,8 +1,9 @@
 import mongoose from "mongoose";
+import next from "next";
 
 const connectMongoDB = async () => {
     try {
-      await mongoose.connect("mongodb+srv://aishwariyaghosal04:hQQZ1TZoehlJzKit@cluster0.e3k3u7n.mongodb.net/", {
+      await mongoose.connect(process.env.NEXT_PUBLIC_MONGODB_URI, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
       });
